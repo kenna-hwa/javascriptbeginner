@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>엘리먼트 개수 확인</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <span class="logincheck">체크</span>
+    <br><br>
+    <div class="checked">
+    <input type="checkbox" value="1"> A<br>
+    <input type="checkbox" value="2"> B<br>
+    <input type="checkbox" value="3"> C<br>
+    </div>  
+    <script>
+        $(".checked").click(function () {
+            var n = $(":checked").length;
+            alert(n);
+        })
+    </script>
+</body>
+
+</html>
